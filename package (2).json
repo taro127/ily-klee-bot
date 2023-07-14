@@ -1,0 +1,8 @@
+{
+  "name": "fancymodbot",
+  "author": "ngrdariulvdfkjlhdraklbd",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "name": "ngrdariulvdfkjlhdraklbd/fancymodbot",
+  "timeout": 10000,
+  "connector": false,
+  "env": [
+    {
+      "name": "SERVERNAME",
+      "description": "Name of the server, used for customization."
+    },
+    {
+      "name": "MUTEROLE",
+      "description": "Role ID of your Muted Role"
+    },
+    {
+      "name": "LOGCHANNEL",
+      "description": "Id of Your log channel"
+    },
+    {
+      "name": "COMMANDTYPE",
+      "description": "Use \"command\" for slash commands, \"prefix\" for prefix commands, or \"both\" for both types"
+    },
+    {
+      "name": "ADMINROLE",
+      "description": "The Role ID that has access to all prefix commands"
+    },
+    {
+      "name": "COMMANDPREFIX",
+      "description": "The prefix for your commands, Needed if use CommandType: \"prefix\" or \"both\""
+    },
+    {
+      "name": "GUILDID",
+      "description": "The ID of your bot's guild"
+    }
+  ],
+  "events": {
+    "functions/PrefixCommands/Ban.js": {
+      "name": "discord.message.create"
+    },
+    "functions/Extras/JoinThreads.js": {
+      "name": "discord.thread.create"
+    },
+    "functions/SlashCommands/Ban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "ban"
+      }
+    },
+    "functions/Extras/CommandCreator.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/SlashCommands/Kick.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "kick"
+      }
+    },
+    "functions/SlashCommands/Mute.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "mute"
+      }
+    },
+    "functions/SlashCommands/Unban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "unban"
+      }
+    },
+    "functions/SlashCommands/Unmute.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "unmute"
+      }
+    },
+    "functions/SlashCommands/Warn.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "warn"
+      }
+    },
+    "functions/PrefixCommands/Kick.js": {
+      "name": "discord.message.create"
+    },
+    "functions/PrefixCommands/Mute.js": {
+      "name": "discord.message.create"
+    },
+    "functions/PrefixCommands/Unban.js": {
+      "name": "discord.message.create"
+    },
+    "functions/PrefixCommands/Unmute.js": {
+      "name": "discord.message.create"
+    },
+    "functions/PrefixCommands/Warn.js": {
+      "name": "discord.message.create"
+    },
+    "functions/Extras/ContextMenuCreator.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/ContextMenus/Ban.js": {
+      "name": "discord.user.contextmenu.interaction",
+      "subtype": {
+        "name": "Ban"
+      }
+    },
+    "functions/ContextMenus/DmChecker.js": {
+      "name": "discord.dm.create"
+    }
+  }
+}

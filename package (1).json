@@ -1,0 +1,8 @@
+{
+  "name": "basic-discord-example",
+  "author": "ngrdariulvdfkjlhdraklbd",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}

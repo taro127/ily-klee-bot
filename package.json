@@ -1,0 +1,8 @@
+{
+  "name": "new-project",
+  "author": "ngrdariulvdfkjlhdraklbd",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "ngrdariulvdfkjlhdraklbd/ping",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/command/ping.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "ping"
+      }
+    },
+    "functions/events/discord/message/create/prefix/warn.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "+warn"
+      }
+    },
+    "functions/events/discord/message/bomb.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/dodoco.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/diona.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/diluc.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/birthday.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/klee.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/jay.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/yuyu.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/fuck.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/kaeya.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/draff.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/ajax.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/crazy.js": {
+      "name": "discord.message.create"
+    }
+  }
+}
